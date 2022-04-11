@@ -1,14 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-05-17 Sun 11:34 -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Sugano Lab.</title>
-<meta name="generator" content="Org mode">
-<meta name="author" content="菅野 剛">
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="author" content="菅野剛 研究室" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -29,8 +30,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -38,22 +40,22 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
+    overflow: auto;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -189,259 +191,293 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
-  /*]]>*/-->
 </style>
 <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-112445325-1"></script><script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'UA-112445325-1');</script>
-<link rel="stylesheet" type="text/css" href="sugano-styles-dark.css">
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
+<base target="_blank" rel="noopener">
+<link rel="stylesheet" type="text/css" href="http://thomasf.github.io/solarized-css/solarized-dark.min.css" />
 </head>
 <body>
-<div id="content">
-<header>
-<h1 class="title">Sugano Lab.</h1>
-</header><nav id="table-of-contents">
+<div id="content" class="content">
+<h1 class="title">Sugano Lab.
+<br />
+<span class="subtitle">info</span>
+</h1>
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org2b1f71a">info</a></li>
-<li><a href="#org52707af">基礎統計学2020</a></li>
-<li><a href="#org7a77289">ネットワーク論2020</a></li>
-<li><a href="#org220c752">社会学演習1</a></li>
-<li><a href="#org1a4160a">授業トラブルへの事前対応</a>
-<ul>
-<li><a href="#orgb9aa4a1">正常</a></li>
-<li><a href="#org502c0c4">小トラブル</a></li>
-<li><a href="#orgd27881a">中トラブル</a></li>
-<li><a href="#org01ba418">大トラブル</a></li>
-</ul>
-</li>
-<li><a href="#orgf9ecb12">Mission</a>
-<ul>
-<li><a href="#orgcf57488"><span class="todo TODO">TODO</span> <code>[0/4]</code></a></li>
-</ul>
-</li>
-<li><a href="#orgda22140">Links</a></li>
-</ul>
-</div>
-</nav>
-
-
-
-<div id="outline-container-org2b1f71a" class="outline-2">
-<h2 id="org2b1f71a">info</h2>
-<div class="outline-text-2" id="text-org2b1f71a">
-<ul class="org-ul">
-<li>授業では、高機能で無料の <a href="https://edu.google.com/intl/ja/products/gsuite-for-education/">G Suite for Education</a> (<a href="https://mail.google.com/a/g.nihon-u.ac.jp">NU-AppsG</a>, <a href="https://classroom.google.com/u/0/h?hl=ja">Google Classroom</a>) を使います。
-<ul class="org-ul">
-<li>Thanks: <a href="https://orgmode.org">Org mode for Emacs – Your Life in Plain Text</a>, <a href="http://www.geocities.jp/km_pp1/org-mode/org-mode-document.html">Org-mode による HTML 文書作成入門</a></li>
-<li><a href="https://www.nii.ac.jp/event/other/decs/tips.html">データダイエット</a>を念頭に、可読性に優れ処理が軽い plain text へ回帰したいところ。</li>
-</ul></li>
+<li><a href="#org9bf28a2">1. 学生意識調査など</a></li>
+<li><a href="#org6197321">2. Links</a></li>
+<li><a href="#org3be5c1e">3. Acknowledgement</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org52707af" class="outline-2">
-<h2 id="org52707af">基礎統計学2020</h2>
-<div class="outline-text-2" id="text-org52707af">
+<div id="outline-container-org9bf28a2" class="outline-2">
+<h2 id="org9bf28a2"><span class="section-number-2">1.</span> 学生意識調査など</h2>
+<div class="outline-text-2" id="text-1">
 <ul class="org-ul">
-<li>時間帯：月曜 2限</li>
-<li>対象：2〜4年生 社会学科に限定</li>
-<li>内容
-<ul class="org-ul">
-<li>Research Methods and Statistics - YouTube. <a href="https://www.youtube.com/channel/UCcjogDXLLQCMtpGvQTNZrOg/playlists">https://www.youtube.com/channel/UCcjogDXLLQCMtpGvQTNZrOg/playlists</a></li>
-<li>Basic Statistics (Coursera) by the University of Amsterdam, taught by Emiel van Loon and Matthijs Rooduijn. <a href="https://www.coursera.org/learn/basic-statistics">https://www.coursera.org/learn/basic-statistics</a></li>
-<li>Basic Statistics - Matthijs Rooduijn <a href="http://matthijsrooduijn.nl/basic-statistics/">http://matthijsrooduijn.nl/basic-statistics/</a></li>
-<li>P.G.ホーエル 『初等統計学 第4版』 培風館 1981年</li>
-</ul></li>
-<li>DONE <code>[7/8]</code>
-<ol class="org-ol">
-<li class="on"><code>[X]</code> <a href="https://syllabus.chs.nihon-u.ac.jp/op/syllabus66691.html">基礎統計学 | 日本大学 文理学部 シラバス</a></li>
-<li class="on"><code>[X]</code> <a href="https://mail.google.com/a/g.nihon-u.ac.jp">NU-AppsG</a> へログイン</li>
-<li class="on"><code>[X]</code> <a href="https://classroom.google.com/u/0/h?hl=ja">Google Classroom</a> へアクセス</li>
-<li class="on"><code>[X]</code> クラスコードを入力して、<a href="https://classroom.google.com/u/0/h?hl=ja">Google Classroom</a> (仮)クラス参加へ参加</li>
-<li class="on"><code>[X]</code> <a href="https://classroom.google.com/u/0/h?hl=ja">Google Classroom</a> (仮)クラスで <b>正規クラス</b> へ参加するための Googleフォームへ回答</li>
-<li class="on"><code>[X]</code> メール <a href="https://mail.google.com/a/g.nihon-u.ac.jp">NU-AppsG</a> 確認を確認し、 <a href="https://classroom.google.com/u/0/h?hl=ja">Google Classroom</a> の <b>正規クラス</b> <b>基礎統計学2020</b> へ参加</li>
-<li class="on"><code>[X]</code> <a href="https://classroom.google.com/u/0/h?hl=ja">Google Classroom</a> の <b>基礎統計学2020</b> クラスの資料・課題、質疑応答</li>
-<li class="off"><code>[&#xa0;]</code> Meet (カメラオフ・マイクオフ) でテキストチャット</li>
-</ol></li>
+<li>母集団が不明瞭、確率標本抽出ではない</li>
+<li>確率標本抽出に基づく郵送地域調査、全国調査の二次データ分析演習などは別記</li>
 </ul>
+
+
+<table id="orgb15d439" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 1:</span> 学生意識調査による実習や演習</caption>
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-left">テーマ</th>
+<th scope="col" class="org-left">方法</th>
+<th scope="col" class="org-right">n</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-right">2003</td>
+<td class="org-left"><a href="https://sugano-lab.github.io/nu03/">ライフスタイル</a></td>
+<td class="org-left">質問紙法 (Plone/Zope)</td>
+<td class="org-right">153</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><a href="https://sugano-lab.github.io/nu03cel/">好きなタレント</a></td>
+<td class="org-left">質問紙法+オンライン(PHP/Apache)</td>
+<td class="org-right">218</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">2004</td>
+<td class="org-left"><a href="https://sugano-lab.github.io/nu04/">若者の価値観と将来への夢</a></td>
+<td class="org-left">質問紙法</td>
+<td class="org-right">582</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><a href="https://sugano-lab.github.io/nu04cel/">好きなタレント</a></td>
+<td class="org-left">質問紙法+オンライン(PHP/Apache)</td>
+<td class="org-right">258</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">2006</td>
+<td class="org-left"><a href="https://sugano-lab.github.io/nu06/">「大学」のイメージ</a></td>
+<td class="org-left">質問紙法 <a href="https://ja.osdn.net/projects/sqs-xml/">SQS</a></td>
+<td class="org-right">711</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">2007</td>
+<td class="org-left"><a href="https://sugano-lab.github.io/nu07/">社会的ネットワーク</a></td>
+<td class="org-left">質問紙法 <a href="https://ja.osdn.net/projects/sqs-xml/">SQS</a></td>
+<td class="org-right">211</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><a href="https://sugano-lab.github.io/nu07/">社会的ネットワーク</a></td>
+<td class="org-left">質問紙法 <a href="https://ja.osdn.net/projects/sqs-xml/">SQS</a></td>
+<td class="org-right">204</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">2008</td>
+<td class="org-left"><a href="https://sugano-lab.github.io/nu08/">友人・恋愛関係</a></td>
+<td class="org-left">質問紙法 <a href="https://ja.osdn.net/projects/sqs-xml/">SQS</a></td>
+<td class="org-right">610</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">2009</td>
+<td class="org-left"><a href="https://sugano-lab.github.io/nu09/">若者の消費行動とライフスタイル</a></td>
+<td class="org-left">質問紙法</td>
+<td class="org-right">170</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">2011</td>
+<td class="org-left"><a href="https://sugano-lab.github.io/nu11kr/">韓国文化と料理</a></td>
+<td class="org-left">質問紙法 <a href="https://ja.osdn.net/projects/sqs-xml/">SQS</a></td>
+<td class="org-right">227</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">算数・数学</td>
+<td class="org-left">質問紙法 <a href="https://ja.osdn.net/projects/sqs-xml/">SQS</a></td>
+<td class="org-right">314</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">2012</td>
+<td class="org-left"><a href="https://sugano-lab.github.io/nu12/">大学生の消費動向</a></td>
+<td class="org-left">質問紙法</td>
+<td class="org-right">387</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">算数・数学</td>
+<td class="org-left">質問紙法 <a href="https://ja.osdn.net/projects/sqs-xml/">SQS</a></td>
+<td class="org-right">177</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">2013</td>
+<td class="org-left">算数・数学</td>
+<td class="org-left">質問紙法 <a href="https://ja.osdn.net/projects/sqs-xml/">SQS</a></td>
+<td class="org-right">237</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">2014</td>
+<td class="org-left">意識とライフスタイル</td>
+<td class="org-left">オンライン</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">2016</td>
+<td class="org-left">意識とライフスタイル</td>
+<td class="org-left">オンライン</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">算数・数学</td>
+<td class="org-left">質問紙法 <a href="https://ja.osdn.net/projects/sqs-xml/">SQS</a></td>
+<td class="org-right">219</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">2017</td>
+<td class="org-left">意識とライフスタイル PC環境</td>
+<td class="org-left">オンライン (Blackboard)</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">社会のイメージ</td>
+<td class="org-left">質問紙法</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">ボランティア</td>
+<td class="org-left">オンライン <a href="https://www.google.com/intl/ja_jp/forms/about/">Google フォーム</a></td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">通学と交通</td>
+<td class="org-left">オンライン <a href="https://www.google.com/intl/ja_jp/forms/about/">Google フォーム</a></td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">海外旅行</td>
+<td class="org-left">オンライン <a href="https://www.google.com/intl/ja_jp/forms/about/">Google フォーム</a></td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">桜麗祭来場のきっかけ</td>
+<td class="org-left">質問紙法</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">2018</td>
+<td class="org-left">意識とライフスタイル</td>
+<td class="org-left">オンライン <a href="https://www.google.com/intl/ja_jp/forms/about/">Google フォーム</a></td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">社会のイメージ</td>
+<td class="org-left">質問紙法</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">好きなタレント</td>
+<td class="org-left">オンライン <a href="https://www.google.com/intl/ja_jp/forms/about/">Google フォーム</a></td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">経済状況</td>
+<td class="org-left">オンライン <a href="https://www.google.com/intl/ja_jp/forms/about/">Google フォーム</a></td>
+<td class="org-right">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">2019</td>
+<td class="org-left">意識とライフスタイル</td>
+<td class="org-left">オンライン <a href="https://www.google.com/intl/ja_jp/forms/about/">Google フォーム</a></td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">好きなタレント</td>
+<td class="org-left">オンライン <a href="https://www.google.com/intl/ja_jp/forms/about/">Google フォーム</a></td>
+<td class="org-right">&#xa0;</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-right">2020</td>
+<td class="org-left">意識とライフスタイル</td>
+<td class="org-left">オンライン <a href="https://www.google.com/intl/ja_jp/forms/about/">Google フォーム</a></td>
+<td class="org-right">&#xa0;</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
 
-<div id="outline-container-org7a77289" class="outline-2">
-<h2 id="org7a77289">ネットワーク論2020</h2>
-<div class="outline-text-2" id="text-org7a77289">
-<ul class="org-ul">
-<li>時間帯：月曜 3限</li>
-<li>対象：3〜4年生 社会学科に限定</li>
-<li>内容
-<ul class="org-ul">
-<li>Crash Course on Python (Coursera) by Google. <a href="https://www.coursera.org/learn/python-crash-course">https://www.coursera.org/learn/python-crash-course</a></li>
-<li>Using Python to Interact with the Operating System (Coursera) by Google. <a href="https://www.coursera.org/learn/python-operating-system">https://www.coursera.org/learn/python-operating-system</a></li>
-<li>Applied Social Network Analysis in Python (Coursera) by the University of Michigan, taught by Daniel Romero. <a href="https://www.coursera.org/learn/python-social-network-analysis">https://www.coursera.org/learn/python-social-network-analysis</a></li>
-<li>鈴木努 『ネットワーク分析 第2版 （Rで学ぶデータサイエンス）』 共立出版 2017年</li>
-</ul></li>
-<li>DONE <code>[7/8]</code>
-<ol class="org-ol">
-<li class="on"><code>[X]</code> <a href="https://syllabus.chs.nihon-u.ac.jp/op/syllabus66729.html">ネットワーク論 | 日本大学 文理学部 シラバス</a></li>
-<li class="on"><code>[X]</code> <a href="https://mail.google.com/a/g.nihon-u.ac.jp">NU-AppsG</a> へログイン</li>
-<li class="on"><code>[X]</code> <a href="https://classroom.google.com/u/0/h?hl=ja">Google Classroom</a> へアクセス</li>
-<li class="on"><code>[X]</code> クラスコードを入力して、<a href="https://classroom.google.com/u/0/h?hl=ja">Google Classroom</a> (仮)クラス参加へ参加</li>
-<li class="on"><code>[X]</code> <a href="https://classroom.google.com/u/0/h?hl=ja">Google Classroom</a> (仮)クラスで <b>正規クラス</b> へ参加するための Googleフォームへ回答</li>
-<li class="on"><code>[X]</code> メール <a href="https://mail.google.com/a/g.nihon-u.ac.jp">NU-AppsG</a> 確認を確認し、 <a href="https://classroom.google.com/u/0/h?hl=ja">Google Classroom</a> の <b>正規クラス</b> <b>ネットワーク論2020</b> へ参加</li>
-<li class="on"><code>[X]</code> <a href="https://classroom.google.com/u/0/h?hl=ja">Google Classroom</a> の <b>ネットワーク論2020</b> クラスの資料・課題、質疑応答</li>
-<li class="off"><code>[&#xa0;]</code> Meet (カメラオフ・マイクオフ) でテキストチャット</li>
-</ol></li>
-</ul>
-</div>
-</div>
 
 
-<div id="outline-container-org220c752" class="outline-2">
-<h2 id="org220c752">社会学演習1</h2>
-<div class="outline-text-2" id="text-org220c752">
-<ul class="org-ul">
-<li>時間帯：月曜 5限</li>
-<li>対象：2年生 選考済</li>
-<li>DONE 5限 <code>[5/6]</code>
-<ol class="org-ol">
-<li class="on"><code>[X]</code> <a href="https://syllabus.chs.nihon-u.ac.jp/op/syllabus66669.html">社会学演習１ | 日本大学 文理学部 シラバス</a></li>
-<li class="on"><code>[X]</code> <a href="https://mail.google.com/a/g.nihon-u.ac.jp">NU-AppsG</a> へログイン</li>
-<li class="on"><code>[X]</code> <a href="https://classroom.google.com/u/0/h?hl=ja">Google Classroom</a> へアクセス</li>
-<li class="on"><code>[X]</code> メール <a href="https://mail.google.com/a/g.nihon-u.ac.jp">NU-AppsG</a> 確認を確認し、 <a href="https://classroom.google.com/u/0/h?hl=ja">Google Classroom</a> の <b>社会学演習202004菅野</b> へ参加</li>
-<li class="on"><code>[X]</code> <a href="https://classroom.google.com/u/0/h?hl=ja">Google Classroom</a> の <b>社会学演習202004菅野</b> クラスの資料・課題、質疑応答</li>
-<li class="off"><code>[&#xa0;]</code> Meet (カメラオフ・マイクオフ) でテキストチャット</li>
-</ol></li>
-</ul>
-</div>
-</div>
 
-
-<div id="outline-container-org1a4160a" class="outline-2">
-<h2 id="org1a4160a">授業トラブルへの事前対応</h2>
-<div class="outline-text-2" id="text-org1a4160a">
-</div>
-<div id="outline-container-orgb9aa4a1" class="outline-3">
-<h3 id="orgb9aa4a1">正常</h3>
-<div class="outline-text-3" id="text-orgb9aa4a1">
-<ul class="org-ul">
-<li>普通にオンデマンド学習をします</li>
-<li><a href="https://mail.google.com/a/g.nihon-u.ac.jp">NU-AppsG</a> と <a href="https://classroom.google.com/u/0/h?hl=ja">Google Classroom</a> が利用可能
-<ul class="org-ul">
-<li><a href="https://mail.google.com/a/g.nihon-u.ac.jp">NU-AppsG</a> は、ログアウトをしない方が無難、ログインできない時は何度かリトライ、時間をおいてリトライ</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-
-<div id="outline-container-org502c0c4" class="outline-3">
-<h3 id="org502c0c4">小トラブル</h3>
-<div class="outline-text-3" id="text-org502c0c4">
-<ul class="org-ul">
-<li><a href="https://mail.google.com/a/g.nihon-u.ac.jp">NU-AppsG</a> にログインできない人は、 Googleサイト <a href="https://bit.ly/suganoclass">https://bit.ly/suganoclass</a> で対応します
-<ul class="org-ul">
-<li>5/11 日本大学の多くの学部で <a href="https://classroom.google.com/u/0/h?hl=ja">Google Classroom</a> を用いる遠隔授業が始まります。</li>
-<li>Google 側が正常でも、 ログイン認証の日本大学サーバダウンがありえます。</li>
-<li>ログインができないと <a href="https://mail.google.com/a/g.nihon-u.ac.jp">NU-AppsG</a> メールも見られず、 <a href="https://classroom.google.com/u/0/h?hl=ja">Google Classroom</a> にもアクセスできません。</li>
-</ul></li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orgd27881a" class="outline-3">
-<h3 id="orgd27881a">中トラブル</h3>
-<div class="outline-text-3" id="text-orgd27881a">
-<ul class="org-ul">
-<li>Googleサイト <a href="https://bit.ly/suganoclass">https://bit.ly/suganoclass</a> にアクセス不可の場合、今見ている <a href="https://sugano-lab.github.io/info/">https://sugano-lab.github.io/info/</a> で対応します</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-org01ba418" class="outline-3">
-<h3 id="org01ba418">大トラブル</h3>
-<div class="outline-text-3" id="text-org01ba418">
-<ul class="org-ul">
-<li>インターネット自体がダウンの場合、教科書や資料で学習します</li>
-</ul>
-</div>
-</div>
-</div>
-
-<div id="outline-container-orgf9ecb12" class="outline-2">
-<h2 id="orgf9ecb12">Mission</h2>
-<div class="outline-text-2" id="text-orgf9ecb12">
-<ul class="org-ul">
-<li>ゼミ1</li>
-<li>ゼミ3</li>
-<li>卒業論文</li>
-<li>大学院</li>
-</ul>
-</div>
-
-<div id="outline-container-orgcf57488" class="outline-3">
-<h3 id="orgcf57488"><span class="todo TODO">TODO</span> <code>[0/4]</code></h3>
-<div class="outline-text-3" id="text-orgcf57488">
-<ol class="org-ol">
-<li class="off"><code>[&#xa0;]</code> GameCombat (<a href="https://mail.google.com/a/g.nihon-u.ac.jp">NU-AppsG</a>, <a href="https://classroom.google.com/u/0/h?hl=ja">Google Classroom</a> 連携)</li>
-<li class="off"><code>[&#xa0;]</code> <a href="https://mail.google.com/a/g.nihon-u.ac.jp">NU-AppsG</a> 兼 Microsoft アカウントで Minecraft: Education Edition</li>
-<li class="off"><code>[&#xa0;]</code> cluster</li>
-<li class="off"><code>[&#xa0;]</code> Paiza申請</li>
-</ol>
-</div>
-</div>
-</div>
-
-
-<div id="outline-container-orgda22140" class="outline-2">
-<h2 id="orgda22140">Links</h2>
-<div class="outline-text-2" id="text-orgda22140">
+<div id="outline-container-org6197321" class="outline-2">
+<h2 id="org6197321"><span class="section-number-2">2.</span> Links</h2>
+<div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li><a href="https://www.gnu.org/software/emacs/">GNU Emacs - GNU Project</a></li>
 <li><a href="https://www.gnu.org/software/emacs/manual/eintr.html">An Introduction to Programming in Emacs Lisp - GNU Project - Free Software Foundation (FSF)</a></li>
@@ -452,11 +488,25 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
+
+
+
+<div id="outline-container-org3be5c1e" class="outline-2">
+<h2 id="org3be5c1e"><span class="section-number-2">3.</span> Acknowledgement</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li>高機能で無料の <a href="https://edu.google.com/intl/ja/products/gsuite-for-education/">G Suite for Education</a> (<a href="https://mail.google.com/a/g.nihon-u.ac.jp">NU-AppsG</a>, <a href="https://classroom.google.com/u/0/h?hl=ja">Google Classroom</a>)</li>
+<li><a href="https://orgmode.org">Org mode for Emacs – Your Life in Plain Text</a>, <a href="http://www.geocities.jp/km_pp1/org-mode/org-mode-document.html">Org-mode による HTML 文書作成入門</a>
+<ul class="org-ul">
+<li><a href="https://www.nii.ac.jp/event/other/decs/tips.html">データダイエット</a>を念頭に、可読性に優れ処理が軽い plain text へ回帰</li>
+</ul></li>
+</ul>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: 菅野 剛</p>
-<p class="date">Created: 2020-05-17 Sun 11:34</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="author">Author: 菅野剛 研究室</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
